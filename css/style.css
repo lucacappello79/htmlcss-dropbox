@@ -9,6 +9,15 @@ body{
     border: 1px solid red;
 }
 
+.container-centered{
+    max-width: 1000px;
+    /* min-height: 2000px; */
+    margin: auto;
+    margin-top: 100px;
+    background-color: darksalmon;
+}
+
+/* inizio navbar */
 nav{
     display: flex;
     justify-content: space-between;
@@ -48,4 +57,154 @@ nav{
     display: flex;
     justify-content: space-between;
     gap: 30px;
+}
+
+/* fine navbar */
+
+/* inizio jumbo */
+#jumbo{
+    background-color: aqua;
+}
+
+.jumbo-inner{
+    margin: 40px auto 0;
+    max-width: 1200px;
+    background-color: blanchedalmond;
+}
+
+h1{
+    font-size: 3em;
+}
+
+.jumbo-inner-bottom{
+    display: flex;
+}
+
+.jumbo-inner-right img{
+    width: calc(100% + 45px);
+    margin-bottom: -40px;
+}
+/* fine jumbo */
+
+/* inizio main plans */
+.main-plans-type{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(54, 103, 209);
+    min-height: 400px;
+}
+
+.main-plans-type div{
+    display: flex;
+    width: 25%;
+    background-color: chartreuse;
+}
+
+.main-team{
+    margin: 40px auto 60px;
+    height: 250px;
+    background-color: white;
+}
+
+.main-team-top{
+    text-align: center;
+    height: 15%;
+}
+
+.main-team-bottom{
+    display: flex;
+    height: 85%;
+}
+
+.main-team-bottom-left{
+    flex-grow: 1;
+    height: 100%;
+    background-color: rgb(79, 123, 161);
+}
+
+.main-team-bottom-right{
+    width: 35%;
+    height: 100%;
+    background-color: rgb(96, 156, 81);
+}
+
+.main-partner{
+    display: flex;
+    height: 400px;
+    background-color: white;
+}
+
+.main-partner img{
+    height: 100%;
+}
+
+.main-partner-right{
+    margin: 40px 20px; 
+
+}
+
+/* inizio griglia */
+.main-business{
+    text-align: center;
+    margin-top: 40px;
+    background-color: burlywood;
+}
+
+.main-business-grid{
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    text-align: center;
+    width: calc(100% / 3 - 10px);
+    background-color: cornflowerblue;
+}
+
+.card img{
+    width: 100%;
+}
+
+.main-business-bottom{
+    padding: 50px 0;
+    text-align: left;
+}
+
+.main-business-bottom h1{
+    margin-bottom: 40px;
+}
+/* fine griglia */
+
+/* inizio featured */
+.featured-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.featured{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 3);
+    height: 400px;
+
+}
+
+.box{
+    width: 50%;
+    /* height: 50%; */
+    background-color: beige;
+}
+
+.featured-bottom{
+    display: flex;
+    flex-grow: 1;
+    background-color: burlywood;
+    height: 200px;
+}
+
+.featured-bottom-text{
+    display: flex;
 }
