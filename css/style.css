@@ -13,7 +13,6 @@ body{
     max-width: 1000px;
     /* min-height: 2000px; */
     margin: auto;
-    margin-top: 100px;
     background-color: darksalmon;
 }
 
@@ -64,6 +63,7 @@ nav{
 /* inizio jumbo */
 #jumbo{
     background-color: aqua;
+    margin-bottom: 100px;
 }
 
 .jumbo-inner{
@@ -173,7 +173,7 @@ h1{
     text-align: left;
 }
 
-.main-business-bottom h1{
+.main-business-bottom h1, .faq-wrapper h2{
     margin-bottom: 40px;
 }
 /* fine griglia */
@@ -199,12 +199,29 @@ h1{
 }
 
 .featured-bottom{
-    display: flex;
     flex-grow: 1;
     background-color: burlywood;
     height: 200px;
+    display: flex;
+    align-items: center;
 }
 
 .featured-bottom-text{
+
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* inizio faq */
+
+.faq-wrapper{
+    padding: 100px 0;
+    height: 400px;
+    background-color: cornflowerblue;
+}
+
+.faq-wrapper div{
+    line-height: 60px;
+    border-bottom: 1px solid grey;
 }
