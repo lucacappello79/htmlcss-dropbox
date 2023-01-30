@@ -6,34 +6,33 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
 }
 
 .container-centered{
-    max-width: 1200px;
-    /* min-height: 2000px; */
+    max-width: 1000px;
     margin: auto;
-    background-color: darksalmon;
 }
 
 /* inizio navbar */
 nav{
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 50px;
 
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     height: 80px;
-
-    background-color: rgb(187, 190, 190);
     color: rgb(71, 65, 65);
+    background-color: white;
 }
 
 .nav-left, .nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 150px;
 }
 
@@ -62,18 +61,19 @@ nav{
 
 /* inizio jumbo */
 #jumbo{
-    background-color: aqua;
     margin-bottom: 100px;
+    background-color: rgb(180, 208, 231);
 }
 
 .jumbo-inner{
-    margin: 40px auto 0;
+    padding-top: 50px;
+    margin: auto;
     max-width: 1200px;
-    background-color: blanchedalmond;
 }
 
-h1{
-    font-size: 3em;
+#jumbo h1{
+    font-size: 4em;
+    padding-bottom: 40px;
 }
 
 .jumbo-inner-bottom{
@@ -81,8 +81,12 @@ h1{
 }
 
 .jumbo-inner-right img{
-    width: calc(100% + 45px);
+    width: calc(80% + 45px);
     margin-bottom: -40px;
+}
+
+.jumbo-inner-right{
+text-align: right;
 }
 /* fine jumbo */
 
@@ -145,31 +149,33 @@ h1{
 
 /* inizio griglia */
 .main-business{
-    text-align: center;
-    margin-top: 40px;
-    background-color: burlywood;
+    margin-top: 100px;
 }
 
 .main-business-grid{
-    justify-content: space-between;
-    margin-top: 20px;
-    gap: 10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 
 .card{
-    text-align: center;
     width: calc(100% / 3 - 10px);
-    background-color: cornflowerblue;
 }
 
 .card img{
     width: 100%;
+    margin-bottom: 15px;
+}
+
+.card .card-text h2{
+    margin-bottom: 15px;    
 }
 
 .main-business-bottom{
-    padding: 50px 0;
+    padding: 100px 0;
     text-align: left;
 }
 
@@ -178,18 +184,17 @@ h1{
 }
 /* fine griglia */
 
+
+
 /* inizio featured */
 .featured-wrapper{
     display: flex;
-    flex-wrap: wrap;
-}
+    flex-wrap: wrap;}
 
 .featured{
     display: flex;
     flex-wrap: wrap;
     width: calc(100% / 3);
-    height: 400px;
-
 }
 
 .box{
@@ -198,33 +203,46 @@ h1{
     background-color: beige;
 }
 
+.box img{
+    width: 100%;
+    object-fit: fill;
+}
+
 .featured-bottom{
     flex-grow: 1;
-    background-color: burlywood;
-    height: 200px;
     display: flex;
+    justify-content: center;
     align-items: center;
+    height: 250px;
+    background-color: rgb(180, 208, 231);
 }
 
 .featured-bottom-text{
-
+    width: 1000px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+/* /fine featured */
+
+
+
 
 /* inizio faq */
-
 .faq-wrapper{
-    padding: 100px 0;
-    height: 400px;
-    background-color: cornflowerblue;
+    margin: 80px;
 }
 
 .faq-wrapper div{
     line-height: 60px;
     border-bottom: 1px solid grey;
 }
+
+.faq.one{
+    border-top: 1px solid grey;
+}
+/* /fine faq */
+
 
 /* inizio footer */
 footer{
@@ -254,3 +272,4 @@ footer{
     list-style-type: none;
     padding: 10px 0;
 }
+/* /fine footer */
