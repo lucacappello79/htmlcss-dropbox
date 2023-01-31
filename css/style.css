@@ -37,6 +37,13 @@ nav{
     min-width: 150px;
 }
 
+.nav-right button{
+    color: white;
+    background-color: rgb(0, 97, 255);
+    padding: 8px 15px;
+    border: none;
+}
+
 .nav-left img{
     width: 100%;
 }
@@ -69,7 +76,7 @@ nav{
 .jumbo-inner{
     padding-top: 50px;
     margin: auto;
-    max-width: 1200px;
+    max-width: 1100px;
 }
 
 #jumbo h1{
@@ -79,15 +86,33 @@ nav{
 
 .jumbo-inner-bottom{
     display: flex;
+    margin-top: 20px;
 }
 
 .jumbo-inner-right img{
-    width: calc(80% + 45px);
+    width: 100%;
     margin-bottom: -40px;
 }
 
-.jumbo-inner-right{
-text-align: right;
+.jumbo-inner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-start;
+    padding-bottom: 20px;
+    font-size: 14;
+    line-height: 1.5em;
+}
+
+.jumbo-inner-left button{
+    color: white;
+    background-color: rgb(0, 97, 255);
+    padding: 8px 15px;
+    border: none;
+}
+
+.jumbo-inner-left i{
+    font-size: 3em;
 }
 /* fine jumbo */
 
