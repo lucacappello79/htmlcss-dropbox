@@ -120,18 +120,34 @@ nav{
 }
 /* fine jumbo */
 
-/* inizio main plans */
-.main-plans-type{
+/* inizio plans */
+
+.main-plans-type-top{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(54, 103, 209);
-    min-height: 400px;
+    height: 700px;
+    background-color: cornflowerblue;
+    margin-bottom: 50px;
 }
 
-.main-plans-type div{
-    display: flex;
-    width: 25%;
+.main-plans-type-top div{
+    width: calc(80% / 3);
     background-color: chartreuse;
+}
+
+.main-plans-type-bottom{
+    height: 200px;
+    background-color: darkgreen;
+    margin-bottom: 120px;
+}
+
+.col-title{
+    text-align: center;
+    padding: 10px;
+}
+
+.col-title i{
+    margin-right: 10px;
 }
 
 .main-team{
