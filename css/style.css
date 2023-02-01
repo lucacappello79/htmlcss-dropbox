@@ -64,11 +64,6 @@ nav{
     justify-content: space-between;
     gap: 30px;
 }
-
-/* .nav-mid-left div:hover, .nav-mid-right div:hover{
-    border-bottom: 1px solid black;
-} */
-
 /* fine navbar */
 
 /* inizio jumbo */
@@ -117,11 +112,11 @@ nav{
 
 .jumbo-inner-left i{
     font-size: 3em;
+    color: black;
 }
 /* fine jumbo */
 
 /* inizio plans */
-
 .main-plans-title h1{
     margin-bottom: 50px;
 }
@@ -131,6 +126,7 @@ nav{
     padding-right: 40px;
 }
 
+/* stilizzazione colonne */
 .main-plans-type-top{
     display: flex;
     justify-content: space-between;
@@ -147,7 +143,6 @@ nav{
 }
 
 .main-plans-type-bottom{
-    height: 200px;
     margin-bottom: 120px;
 }
 
@@ -234,7 +229,8 @@ nav{
 
 .enter-bot-body{
     display: flex;
-    
+    font-size: 14px;
+    line-height: 1.3em;
 }
 
 .enter-bot-left{
@@ -292,6 +288,8 @@ nav{
 /* inizio sezione main partner */
 .main-partner{
     display: flex;
+    font-size: 14px;
+    line-height: 1.3em;
 }
 
 .main-partner img{
@@ -390,12 +388,12 @@ nav{
 }
 
 .featured.mid{
-    flex-grow: 0;
     background-color: rgb(245, 245, 245);
     padding: 50px;
 
     display: flex;
     justify-content: center;
+    overflow-y: auto;
 }
 
 .box-big img{
@@ -419,14 +417,6 @@ nav{
     align-items: center;
     justify-content: center;
 }
-
-/* .box:hover{
-    box-shadow: inset 0 0 50px #04e12c, 0 0 50px #fff;
-} */
-
-/* .box1:hover{
-    box-shadow: inset 0 0 50px #5d645cb6, 0 0 50px #fff;
-} */
 
 .box img{
     width: 40%;
@@ -598,5 +588,9 @@ li:last-of-type{
 
 .footer-bottom i{
     margin-right: 10px;
+}
+
+.footer-top .list-title ul li:hover{
+    text-shadow: 2px 2px 2px rgb(231, 226, 226), 0 0 20px rgb(194, 194, 194), 0 0 5px rgb(146, 146, 146); 
 }
 /* /fine footer */
